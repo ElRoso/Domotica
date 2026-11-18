@@ -18,6 +18,8 @@ Tus corridas son las únicas completas del pedido (el executor solo corre filtra
 
 No hay linter ni formateador configurados: no se corre ninguno ni se reporta su ausencia como falla.
 
+- Esta tabla manda sobre el encargo: si el encargo nombra otro comando o saltea uno, se corre la tabla igual y se dice en el informe.
+
 ## Chequeos extra
 
 - Cobertura: es un informe, no una puerta (`pytest.ini` no fija `fail-under`). Reportar el porcentaje de los módulos tocados; objetivo 70% en funcionalidad nueva crítica. Por debajo, se reporta, no bloquea.

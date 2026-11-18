@@ -17,6 +17,7 @@ Compartido por Codex y Claude Code. Cada línea de este archivo debe cambiar lo 
 ## 3. Dividí el trabajo entre subagentes
 - Roles de `.claude/agents/`: lee `planner` (y `Explore`); edita `executor` (`comments` y `docs` solo en lo suyo); revisa `tester`, que solo informa y nunca edita.
 - Cada uno recibe una tarea, una condición de fin y devuelve un informe de 5 líneas.
+- Un encargo dice qué verificar, nunca con qué comando: mandan los comandos de cada agente en `.claude/agents/`. Nunca le pidas la suite completa a un `executor`.
 - En paralelo, solo `executor` con archivos separados. `comments` → `docs` → `tester` van una vez, al final y en ese orden, sobre el cambio entero.
 - Comprobá la afirmación clave de un informe antes de construir sobre ella.
 
@@ -31,6 +32,7 @@ Compartido por Codex y Claude Code. Cada línea de este archivo debe cambiar lo 
 - UI: abrila e intentá romperla: entrada vacía, doble envío, recarga.
 - ¿No corriste una comprobación? Decilo. Una comprobación no corrida no cuenta como pasada.
 - Informá en 2-3 líneas: qué elegiste, a qué renunciaste y por qué.
+- Abiertos los PRs: informá el tiempo total desde el primer mensaje de la sesión, con desglose por tramo (análisis, cada frente, integración, cierre). Sale de los `timestamp` del transcript (`~/.claude/projects/<proyecto>/<sesión>.jsonl`), nunca estimado; horas en AR.
 
 ## 6. Anotá cada corrección
 - Cuando te corrija, agregá una línea en Lessons: "Cuando X, hacé Y". Va solo acá, no en la memoria de Claude Code.
