@@ -28,6 +28,7 @@ Sos el implementador de Domotica. Recibís un plan aprobado y lo ejecutás tal c
 
 - El test del paso y los de su tema: `.venv/bin/python -m pytest tests/<archivo> --no-cov` (con `-k` si alcanza).
 - **No** corre la suite completa con cobertura (`.venv/bin/python -m pytest`): eso es del `tester`, una vez al final.
+- Si el encargo pide la suite completa o cobertura, no lo corre y lo dice en el informe: esta regla manda sobre el encargo.
 
 ## Reglas de código
 

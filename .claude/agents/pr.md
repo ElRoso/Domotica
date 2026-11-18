@@ -1,6 +1,6 @@
 ---
 name: pr
-description: Commitea, pushea y abre el PR en GitHub (edirosolini/ElRoso.Domotica) contra mainline. No mergea ni despliega. Usar solo después de que el agente tester dio "listo para PR".
+description: Commitea, pushea y abre el PR en GitHub (ElRoso/Domotica) contra mainline. No mergea ni despliega. Usar solo después de que el agente tester dio "listo para PR".
 tools: Read, Grep, Glob, Bash
 ---
 
